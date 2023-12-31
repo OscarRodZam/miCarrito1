@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" description " content="La descriocion de la pagina">
+    <meta name="author" content="Oscar Daniel Rodriguez Zamudio">
+    <title> mi primer pagina uHTML5</title>
+    <script>
+        /*alert("Lanolin manda cerdo");*/
+    </script>
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+      <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+      <link href="css/estilos.css" rel="stylesheet">
+    
+  
+
+    <style></style>
+</head>
+<body>
+
+
+
+    
+    <header class="d-flex justify-content-between align-items-center">
+        <div><i class="btn_header bi bi-list"></i></i></button></div>
+       <div class="d-flex align-items-center">
+        
+        <div id="Logo">
+            <img src ="img/Logo.png" >
+         </div>
+     <h2 class="h2_head"> Dungeon marcket TCG</h2></div>
+     <nav>
+        <button id="btn1" class="btn_header"><i class="bi bi-search-heart"></i></button>
+        <button id="btn2" class="btn_header"><i class="bi bi-person-circle"></i></button>
+        <button id="btn3" class="btn_header"><i class="bi bi-minecart"></i></button>
+     </nav>
+    </header>
+    <section id= "avisos">
+        <!------DivSearch---->
+        <div id= "search" class="container w-25">
+            <span id ="closeBtn">&times;</span>
+            <form class="form-control" name="search" action="#" method="get">
+                <input type="text" name="searchInput" placeholder="¿Que es lo que buscas?...">
+                <button id="btnSearch" class="btn_header"><i class="bi bi-search-heart"></i></button>
+            </form>
+         </div>
+    </section>
+<!----------------------->
+<!--**********LoginForm**********-->
+<div id="LoginForm" class="modal">
+    <span class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="" method="POST">
+      <div class="imgcontainer">
+        <img src="img/madolche.jfif" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Usuario</b></label>
+        <input type="text" placeholder="Ingrese su usuario" name="uname" required>
+  
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Ingrese la contraseña" name="psw" required>
+  
+        <button type="submit">Iniciar Sesión</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Recuperar contraseña
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#a739b1">
+        <button type="button" class=" cancelbtn">Cancelar</button>
+        <span class="psw">¿Olvidaste tu  <a href="#">contraseña?</a></span>
+      </div>
+    </form>
+  </div>
+<!--*****************************-->  
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/slider/Slider1(1).jpg" class="d-block w-100" alt="Mitos y legendas">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mitos y legendas</h5>
+                        <p>Promociones en Mitos y legendas TCG</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/slider2(2).png" class="d-block w-100" alt="Magic 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Magic the Gathering</h5>
+                        <p>Nueva expancion Neo Dynasty</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/slider/slider3(1).png" class="d-block w-100" alt="Yu-gi-oh!">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Yu-Gi-oh!</h5>
+                        <p>Llega la coleccion de 25 aniversario</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+         
+        <section id="promos"></section>
+        
+        <h3 class="h3_cat">Lo mas popular</h3>
+        <section id="categorias" class="d-flex ">
+
+            <div class="card m-2">
+                <img src="img/categoria/-magic.jpg" class="card-img-top" alt="Sin imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Magic the gathering</h5>
+
+                    <a href="#" class="btn btn-primary">Ver Productos</a>
+                </div>
+            </div>
+
+            <div class="card m-2">
+                <img src="img/categoria/-magic.jpg" class="card-img-top" alt="Sin imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Magic the gathering</h5>
+
+                    <a href="#" class="btn btn-primary">Ver Productos</a>
+                </div>
+            </div>
+
+            <div class="card m-2">
+                <img src="img/categoria/-magic.jpg" class="card-img-top" alt="Sin imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Magic the gathering</h5>
+
+                    <a href="#" class="btn btn-primary">Ver Productos</a>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="h3_cat">Lo mas vendido</h3>
+        <section id="categorias" class="d-flex">
+
+            <div class="card m-2">
+                <img src="img/categoria/-magic.jpg" class="card-img-top" alt="Sin imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Magic the gathering</h5>
+
+                    <a href="#" class="btn btn-primary">Ver Productos</a>
+                </div>
+            </div>
+
+            <div class="card m-2">
+                <img src="img/categoria/-magic.jpg" class="card-img-top" alt="Sin imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Magic the gathering</h5>
+
+                    <a href="#" class="btn btn-primary">Ver Productos</a>
+                </div>
+            </div>
+
+            <div class="card m-2">
+                <img src="img/categoria/-magic.jpg" class="card-img-top" alt="Sin imagen">
+                <div class="card-body">
+                    <h5 class="card-title">Magic the gathering</h5>
+
+                    <a href="#" class="btn btn-primary">Ver Productos</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-----productos estrellas------->
+        <h3 class="h3_cat">Destacados</h2>
+        <section class="categorias d-flex flex-wrap">
+        <div class="starProd" >
+            <div class="imgFrame">
+                <div id="idimg1"class="imgStarprod"></div>
+
+            </div>
+            <div class="prodDetails ">
+                <h3 class="h3_cat">Dark Magician deck</h3>
+                <p class="p_cat">Precio: $000.00</p>
+                <button class="btn btn-info">Comprar ahora</button>
+            </div>
+        </div>
+        <div class="starProd " >
+            <div  class="imgFrame">
+                <div id="idimg2"class="imgStarprod"></div>
+
+            </div>
+            <div class="prodDetails ">
+                <h3 class="h3_cat">Comander LOTR deck</h3>
+                <p class="p_cat">Precio: $000.00</p>
+                <button class="btn btn-info">Comprar ahora</button>
+            </div>
+        </div>
+        <div class="starProd " >
+            <div class="imgFrame">
+                <div id="idimg3"class="imgStarprod"></div>
+
+            </div>
+            <div class="prodDetails ">
+                <h3 class="h3_cat">Monkey D Luffy deck</h3>
+                <p class="p_cat">Precio: $000.00</p>
+                <button class="btn btn-info">Comprar ahora</button>
+            </div>
+        </div>
+        <div class="starProd " >
+            <div class="imgFrame">
+                <div id="idimg4" class="imgStarprod"></div>
+
+            </div>
+            <div class="prodDetails ">
+                <h3 class="h3_cat">Pudin Madolche deck</h3>
+                <p class="p_cat">Precio: $000.00</p>
+                <button class="btn btn-info">Comprar ahora</button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    <footer>Derechos reservados</footer>
+</body>
+<scrypt src="bootstrap/js/bootstrap.js"></scrypt>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</html>

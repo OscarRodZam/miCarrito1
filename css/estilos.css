@@ -1,0 +1,402 @@
+/*********Encabezado***********/
+header{
+    width:auto; 
+    background: gray url("../img/headerfondo.jpg") no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+     
+}
+
+#Logo{
+    position: relative;
+    display: inline-block;
+}
+
+#Logo img{
+    width: auto;
+    height: 75px;
+}
+
+h1{
+    position: relative;
+    display: inline-block;
+    color: rgb(8, 82, 58);
+    border: #333 solid 1px;
+    background-color:cornflowerblue;
+}
+
+
+.btn_header{
+    background-color: transparent;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: goldenrod;
+    margin: .5rem;
+    
+
+}
+#bto1{
+    
+    background-color: none;
+    color: #333;
+}
+
+
+#search{
+    display: none;
+    position: absolute;
+    z-index:9999;
+}
+
+#avisos{
+    position: absolute;
+    display: none;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009d;
+    justify-content: center;
+    align-items: center;
+}
+#closeBtn{
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(238, 15, 15);
+}
+/*******LoginForm*************/
+
+/* Bordered form */
+form {
+    border: 3px solid #3546da;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #6b28d6;
+    color: white;
+    padding: 5px 10px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    opacity: 0.7;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #6653cf;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 20px;
+    top: 0;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+/*****slider******/
+.carousel-caption{
+    border: none;
+    background-color: #0b0b0b95;
+    bottom: 0;
+    top: 1rem;
+    height: 20%;
+}
+
+/*********main***********/
+main {
+    background: gray url("../img/R.jfif") no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+/****categorias*****/
+
+.h3_cat{
+    padding: .5rem 0;
+    margin: 2rem 0;
+    background-color: cornflowerblue;
+    box-shadow: #84bdb9 .1rem 1rem 1rem;
+
+}
+.h2_head{
+    color: #6653cf;
+}
+.h4_cat{
+    color: #0f82d9;
+}
+.p_cat{
+    color:#0f82d9;
+}
+.categorias{
+    flex-flow: row nowrap;
+}
+
+
+.card{
+    width: 25%;
+}
+/*********productos estrellas***********/
+.starProd{
+    border:1px solid goldenrod;
+    border-top: #9a29ce dotted 2px;
+    margin: 1rem 0;
+    padding-top: 1.5rem;
+    flex-flow: row;
+    width: 20%;
+}
+
+.imgFrame{
+    width: 200px;
+    height: 200px;
+    border: rgb(125, 46, 146) solid 5px;
+    border-radius: 250px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.imgStarprod{
+    width:100%;
+    height: 100%;
+    border: rgb(121, 46, 133) solid 2px;
+    
+    border-radius: 250px;
+}
+
+
+
+/*full-width input*/
+
+
+
+#idimg1 {
+    background: darkorchid url("../img/magician.png") no-repeat center center;
+    background-size: cover;
+
+}
+
+#idimg2 {
+    background: darkorchid url("../img/frodo.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+#idimg3 {
+    background: darkorchid url("../img/luffy.jfif")no-repeat center center;
+    background-size: cover;
+}
+
+#idimg4 {
+    background: darkorchid url("../img/madolche.jfif")no-repeat center center;
+    background-size: cover;
+}
+
+.prodDetails{
+    border: 1px solid red;
+    width: 100%;
+    flex-flow: row;
+
+}
+
+.prodDetails h3{
+    color: rgb(162, 64, 182);
+    background-color: rgb(125, 46, 146);
+    padding:1rem 2rem;
+    border-radius: .5rem;
+    width: 100%;
+    text-shadow:#333 -1.5px -1.5px 0,
+    #333 1.5px 1px 0,
+    #333 -1.5px 1.5px 0,
+    #333 1px -1.5px 0;
+    
+}
+
+.prodDetails p{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.prodDetails button{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+/*footer*/
+footer {
+    height: 175px;
+    background-color: firebrick;
+}
+/************responsive desing***************/
+@media screen and (max-width:1023px) {
+    .categorias{
+        flex-wrap: nowrap;
+       /* flex-flow: row wrap;*/
+    }
+
+}
+
+@media screen and (max-width:767px){
+    .btn_header{    
+        margin:.1rem;
+    }
+.categorias{
+    flex-flow: row wrap;
+}
+.card{
+    width: 43%;
+}
+
+
+}
+
+@media screen and (max-width:320px){
+    header h2 {
+     display :none;
+    }
+    #Logo img{
+     height: 50px;
+    }
+    .btn_header{
+        margin: 0;
+    }
+    .categorias{
+        flex-flow: row wrap;
+    }
+    .card{
+        width: 100%;
+    }
+    .card a{
+        display: none;
+    }
+    .starProd{
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width:280px) and (max-width:320px){
+    header h2{
+        display: none;
+        
+    }
+
+    #logo img{
+        height: 50px;
+    }
+
+    .btn_header{
+        color:red;
+        font-weight: bolder;
+    }
+
+    #categorias{
+        flex-flow: row wrap;
+    }
+
+    .card a{
+        display: none;
+    }
+    .card{
+        width: 100%;
+    }
+
+}
